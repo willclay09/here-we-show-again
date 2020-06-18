@@ -122,19 +122,23 @@ const kata11Heading = document.createElement('h3')
   kata12Heading.append('KATA 12')
 
   for(let counter12 = 2; counter12 < sampleArray.length; counter12 += 2) {
+      if (sampleArray[counter12] % 2 === 0) {
     const kata12Result = document.createElement('h3')
     parentElement.append(kata12Result)
     kata12Result.append(sampleArray[counter12])
+      }
   }
 
   const kata13Heading = document.createElement('h3')
   parentElement.append(kata13Heading)
   kata13Heading.append('KATA 13')
 
-  for(let counter13 = 1; counter13 < sampleArray.length; counter13 += 2) {
+  for(let counter13 = 1; counter13 <= sampleArray.length; counter13 += 2) {
+      if (sampleArray[counter13] % 2 === 1) {
       const kata13Result = document.createElement ('h3')
       parentElement.append(kata13Result)
       kata13Result.append(sampleArray[counter13])
+      }
   }
 
   const kata14Heading = document.createElement('h3')
